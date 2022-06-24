@@ -11,7 +11,9 @@
 
     <h3>Enter the Form Data</h3>
 
-        <form action="{% url 'result' %}">
+<div>
+
+    <form action="{% url 'result' %}">
         
         {% csrf_token %}
         RI:<input type="text" required name="RI"><br><br>
@@ -26,5 +28,6 @@
 
         <input type="submit" name="" value="submit">
     </form>
+</div>
 </body>
 </html>
